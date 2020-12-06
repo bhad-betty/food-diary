@@ -6,11 +6,10 @@ php:
   - '7.1'
 jobs:
  
-  build:
+build:
 
 runs-on:window-latest
 
- 
 script:
    - composer install
    - vendor/bin/phpunit
