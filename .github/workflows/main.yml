@@ -1,3 +1,5 @@
+
+on: push
 language: php
 php:
   - '7.0'
