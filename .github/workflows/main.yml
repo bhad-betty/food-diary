@@ -1,18 +1,15 @@
-
-on: push
+--- 
+build: ~
+jobs: ~
 language: php
-php:
-  - '7.0'
-  - '7.1'
-jobs:
- 
-build:
+php: 
+  - "7.0"
+  - "7.1"
+steps: 
+  - 
+    uses: actions/checkout@v2
+  - 
+    name: "Validate composer.json and composer.lock"
+true: push
 
-runs-on:window-latest
-
-steps:
-  - uses: actions/checkout@v2
-
-  - name: Validate composer.json and composer.lock
-      run: composer validate
 
