@@ -10,12 +10,7 @@ jobs:
 
     runs-on:window-latest
 
-    steps:
-    - uses: actions/checkout@v2
-     - name: Validate composer.json and composer.lock
-      run: composer validate
-
-    - name: Cache Composer packages
+ 
 script:
    - composer install
    - vendor/bin/phpunit
